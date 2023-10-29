@@ -1,0 +1,75 @@
+#include<iostream>
+using namespace std;
+struct node
+{
+	int info;
+	node*plink;
+	node*flink;
+};
+node*head=null,*tail=null,*nptr,*ptr;
+int item,search;
+void traverse();
+void insert_atstart();
+	
+void insert_atstart();
+{
+	nptr=new node;
+	cout<<"\n Enter the item you want to insert";
+	cin>>iteam
+	if(head==null)
+	{
+		nptr->info=item;
+		nptr->plink=null;
+		nptr->flink=null;
+		head=nptr;
+		tail=nptr;
+		cout<<"\nNode inserted";
+	}
+	else
+	{
+		nptr->info=item;
+		nptr->plink=null;
+		nptr->flink=head;
+		head->plink=nptr;
+		head=nptr;
+		cout<<"\nNode inserted"
+	}
+}
+
+
+void insert_atlast()
+{
+	cout<<"Enter the item you want to insert: "<<endl;
+	cin>>item;
+	if(head==NULL)
+	{
+		nptr->info=item;
+		nptr->plink=NULL;
+		nptr->flink=NULL;
+		head=nptr;
+		tail=nptr;
+		cout<<"Node inserted"<<endl;
+	}
+	else
+	{
+		nptr->info=item;
+		tail->plink=nptr;
+		nptr->flink=tail;
+		nptr->plink=NULL;
+		tail=nptr;
+		cout<<"Node inserted"<<endl;
+	}
+}
+//insert a node before a given value
+void insert_atloc();
+{
+	node*ptr=new node;
+	nptr=new node;
+	cout<<"Enter the item you want to insert":<<endl;
+	cin>>iteam;
+	while(ptr->info!=search)
+	{
+		
+	}
+	
+}
